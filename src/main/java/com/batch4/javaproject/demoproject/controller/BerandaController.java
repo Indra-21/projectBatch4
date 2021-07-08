@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class BerandaController {
     
-    @RequestMapping("/")
-    public String hello (){
-        String html = "hello" ;
+    @RequestMapping("/beranda")
+    public String beranda (){
+        String html = "Beranda" ;
         return html;
     }
 
@@ -20,5 +20,10 @@ public class BerandaController {
     @RequestMapping("/kodehive/mahasiswa")
     public String mahasiswa (){
         return "kampus/kelas/mahasiswa";
+    }
+
+    @RequestMapping("/form/pendaftaran")
+    public String formPendaftaran (){
+        return "form/formPendaftaran";
     }
 }
